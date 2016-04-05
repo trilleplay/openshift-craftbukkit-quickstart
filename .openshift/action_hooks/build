@@ -7,7 +7,6 @@ set -x
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
-	wget "
-https://apia.wd2go.com/api/1.0/rest/device_redirect?device_user_id=20682095&device_uri=%2Fapi%2F1.0%2Frest%2Ffile_contents%2FMinecraft%2FServer%2Fspigot-1.9.2.jar%3Fdevice_user_id%3D20682095%26request_auth_code%3D2c3a8b0ff9d2f45015cc4f4c01b58935751efbe41be99c1925b69054865385ed" -O $CRAFTBUKKIT_SERVER_JAR
+	wget "https://apia.wd2go.com/api/1.0/rest/device_redirect?device_user_id=20682095&device_uri=%2Fapi%2F1.0%2Frest%2Ffile_contents%2FMinecraft%2FServer%2Fspigot-1.9.2.jar%3Fdevice_user_id%3D20682095%26request_auth_code%3D2c3a8b0ff9d2f45015cc4f4c01b58935751efbe41be99c1925b69054865385ed" -O $CRAFTBUKKIT_SERVER_JAR
 fi
 
